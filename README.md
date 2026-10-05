@@ -46,9 +46,21 @@ with the same features expressed with Mezzio plumbing:
 
 ## Installation
 
-```bash
-composer require contenir/contenir-formbuilder-mezzio
+The current release, 2.0.0-RC1, is a release candidate. The database layer
+uses php-db/phpdb 0.6, which is still a dev branch (contenir-db-model
+2.0.0-rc2 depends on it too). Composer only honours stability flags in the
+root `composer.json`, so your site has to allow both itself:
+
+```json
+"require": {
+    "contenir/contenir-formbuilder-mezzio": "^2.0@RC",
+    "php-db/phpdb": "0.6.x-dev@dev"
+}
 ```
+
+Alternatively, set `"minimum-stability": "dev", "prefer-stable": true` in
+your root `composer.json` and require `contenir/contenir-formbuilder-mezzio`
+as usual. 2.0.0 final follows once php-db 0.6.0 is tagged.
 
 With [laminas-component-installer](https://docs.laminas.dev/laminas-component-installer/)
 the `Contenir\FormBuilder\Mezzio\ConfigProvider` is added to

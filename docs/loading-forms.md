@@ -46,3 +46,7 @@ this adapter talks to a `PhpDb\Adapter\AdapterInterface`. The loader and the
 repository use plain prepared SQL rather than `contenir-db-model` entities:
 they only hydrate the core's value objects and append entries, which needs no
 mapping layer, and it keeps the package off a release candidate.
+
+php-db 0.6 is still a dev branch, so a site has to allow it in its root
+`composer.json` (see [Installation](../README.md#installation)); this
+package stays a release candidate until php-db 0.6.0 is tagged.

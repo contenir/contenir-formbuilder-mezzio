@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * formbuilder::form — a form block: the form, or its success state after a
+ * successful submission.
+ *
+ * Plain PHP, so it renders under laminas-view and Plates alike.
+ *
+ * @var Contenir\FormBuilder\Mezzio\Render\PresentedForm $form
+ */
+
+$escape = static fn(string $value): string => htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+?>
+<div class="formbuilder" id="<?= $escape($form->anchor) ?>">
+<?php if ($form->submitted): ?>
+    <div class="formbuilder__success" role="status">
+        <h2 class="formbuilder__success-title"><?= $escape($form->successTitle ?? 'Thank you') ?></h2>
+<?php if (null !== $form->successMessage && '' !== $form->successMessage): ?>
+        <p class="formbuilder__success-message"><?= nl2br($escape($form->successMessage)) ?></p>
+<?php endif ?>
+    </div>
+<?php else: ?>
+<?php if (isset($form->errors['_csrf'])): ?>
+    <p class="formbuilder__notice" role="alert">Your session expired before the form was sent. Please check your details and send it again.</p>
+<?php endif ?>
+    <?= $form->html ?>
+<?php endif ?>
+</div>

@@ -26,7 +26,7 @@ over.
 | `Registrar\StoreSubmissionRegistrar` | `Registrar\StoreSubmissionRegistrar`, unchanged |
 | `Registrar\EmailNotificationRegistrar` on `Laminas\Mail\Transport\TransportInterface` | `Registrar\EmailNotificationRegistrar` on `Symfony\Component\Mailer\MailerInterface`; same HTML/text, escaping, subject and addressing rules |
 | Core `WebhookRegistrar` | The same |
-| File uploads from `$_FILES` via `contenir/storage` | PSR-7 uploads, staged by `Http\UploadedFileStager`, stored via `contenir/contenir-storage` |
+| File uploads from `$_FILES` via `contenir/contenir-storage` | PSR-7 uploads, staged by `Http\UploadedFileStager`, stored via `contenir/contenir-storage` |
 | `Factory\TokenReplacerFactory` (shared `TokenReplacer`, `base_url` from the `Request` service) | `Token\TokenReplacerBuilder` builds one per submission with `base_url` from the request; `TokenReplacer::class` is still registered for code outside a request |
 | `Container\Services` | `Container\Services` (internal), plus `adapter()` |
 

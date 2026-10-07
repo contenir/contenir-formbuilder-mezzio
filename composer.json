@@ -36,12 +36,12 @@
         "psr/log": "^1.0 || ^2.0 || ^3.0"
     },
     "require-dev": {
+        "contenir/contenir-qa-tools": "0.1.x-dev",
         "contenir/contenir-storage": "^2.2",
         "infection/infection": "^0.34.1",
         "laminas/laminas-diactoros": "^3.3",
         "laminas/laminas-servicemanager": "^3.22",
         "mezzio/mezzio-fastroute": "^3.12",
-        "php-db/phpdb-qa-tools": "0.1.x-dev",
         "php-db/phpdb-sqlite": "^0.2.0",
         "phpunit/phpunit": "^11.5.42",
         "symfony/mailer": "^7.4.12 || ^8.0.12"

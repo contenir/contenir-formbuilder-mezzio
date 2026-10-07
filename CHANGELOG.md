@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project
 adheres to [Semantic Versioning](https://semver.org/).
 
+## [2.0.0-RC2] - 2026-10-07
+
+### Changed
+
+- Requires `contenir/contenir-formbuilder` `^2.0` instead of `^2.2`.
+  contenir-formbuilder's 2.0.0 to 2.2.0 tags were withdrawn and its 2.x line
+  restarts at 2.0.0-RC1, so RC1's requirement no longer resolves.
+
 ## [2.0.0-RC1] - 2026-10-06
 
 First release: the Mezzio counterpart of

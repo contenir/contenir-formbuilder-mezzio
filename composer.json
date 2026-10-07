@@ -18,7 +18,7 @@
     ],
     "require": {
         "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
-        "contenir/contenir-formbuilder": "^2.2",
+        "contenir/contenir-formbuilder": "^2.0",
         "laminas/laminas-form": "^3.20",
         "laminas/laminas-inputfilter": "^2.30",
         "laminas/laminas-validator": "^2.50 || ^3.0",

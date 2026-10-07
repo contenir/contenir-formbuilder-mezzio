@@ -8,7 +8,7 @@ adheres to [Semantic Versioning](https://semver.org/).
 
 First release: the Mezzio counterpart of
 `contenir/contenir-formbuilder-laminas-mvc`, for `contenir/contenir-formbuilder`
-2.2. The version starts at 2.0 to line up with the other Contenir 2.x
+2.0. The version starts at 2.0 to line up with the other Contenir 2.x
 packages. See [Coming from laminas-mvc](docs/coming-from-laminas-mvc.md).
 
 ### Added
